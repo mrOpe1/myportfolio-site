@@ -5,7 +5,7 @@
 ## 🚀 Overview
 **Ope Labs** is a results-driven design and development studio focused on turning complex ideas into stunning, functional digital products. This portfolio showcases my expertise in building pixel-perfect designs and high-performance web solutions that captivate and convert.
 
-🔗 **Live Demo:** [ope-labs.netlify.app](https://ope-labs.netlify.app/)
+🔗 **Live Demo:** [opelabs.netlify.app](https://opelabs.netlify.app/)
 
 ---
 

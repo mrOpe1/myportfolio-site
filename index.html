@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ope Labs – Web Developer & Designer. Building stunning digital experiences that captivate and convert." />
+ <meta name="google-site-verification" content="YD5_GhODVkzQg4fTjZPBB9aeOSDMnfbDCZjd6iubTnw" />
+  <title>Ope Labs | Web Developer & Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="brand-icon">
+          <div class="flask-body">
+            <div class="flask-waves"></div>
+          </div>
+          <div class="flask-dot"></div>
+        </div>
+        Ope<span>Labs</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <button class="nav-close-btn" id="nav-close-btn" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-backdrop" id="nav-backdrop"></div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+      <a href="contact.html#contact-form" class="btn btn-primary hire-btn">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= HERO SECTION ======= -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content fade-in">
+      <span class="section-tag fade-up">Innovation Lab</span>
+      <h1 class="hero-name fade-up">I build websites that <span class="accent">work</span></h1>
+      <div class="hero-typewriter fade-up">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc fade-up">Ope Labs is a results-driven design and development studio. I turn complex ideas into stunning, functional digital products.</p>
+      <div class="hero-btns">
+        <a href="projects.html" class="btn btn-primary" id="hero-projects-btn">View My Work</a>
+        <a href="contact.html#contact-form" class="btn btn-outline" id="hero-hire-btn">Hire Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS SECTION ======= -->
+  <section class="skills-section section-pad" id="skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">What I Do</span>
+        <h2>My <span class="accent">Expertise</span></h2>
+        <p>Delivering pixel-perfect designs and blazing-fast web solutions</p>
+      </div>
+      <div class="skills-grid fade-up">
+
+        <!-- UI/UX Design -->
+        <div class="skill-card" id="skill-ui">
+          <div class="skill-visual skill-visual--ui">
+            <div class="sv-frame">
+              <div class="sv-topbar"><span></span><span></span><span></span></div>
+              <div class="sv-screen">
+                <div class="sv-sidebar"></div>
+                <div class="sv-content">
+                  <div class="sv-block tall"></div>
+                  <div class="sv-block short"></div>
+                  <div class="sv-btn-row"><div class="sv-pill"></div><div class="sv-pill dark"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="sv-cursor"><i class="fa-solid fa-arrow-pointer"></i></div>
+          </div>
+          <div class="skill-body">
+            <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive, beautiful interfaces that users love. From wireframes to polished designs.</p>
+            <div class="skill-tags"><span>Figma</span><span>Adobe XD</span><span>Prototyping</span></div>
+          </div>
+        </div>
+
+        <!-- Frontend Dev -->
+        <div class="skill-card" id="skill-frontend">
+          <div class="skill-visual skill-visual--frontend">
+            <div class="sv-code-window">
+              <div class="sv-topbar"><span></span><span></span><span></span></div>
+              <div class="sv-code-lines">
+                <div class="sv-line"><span class="ck">const</span> <span class="cv">app</span> <span class="co">=</span> <span class="cf">createApp</span><span>()</span></div>
+                <div class="sv-line indent"><span class="ck">return</span> <span class="cs">&lt;Hero /&gt;</span></div>
+                <div class="sv-line indent"><span class="ck">import</span> <span class="cv">React</span></div>
+                <div class="sv-line"><span class="co">.render</span><span>(</span><span class="cs">'#app'</span><span>)</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-body">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Frontend Dev</h3>
+            <p>Building responsive, performant web apps with modern frameworks and clean code.</p>
+            <div class="skill-tags"><span>HTML/CSS</span><span>JavaScript</span><span>React</span></div>
+          </div>
+        </div>
+
+        <!-- Backend Dev -->
+        <div class="skill-card" id="skill-backend">
+          <div class="skill-visual skill-visual--backend">
+            <div class="sv-server-stack">
+              <div class="sv-server-unit"><div class="sv-led"></div><div class="sv-bars"><span></span><span></span><span></span></div></div>
+              <div class="sv-server-unit"><div class="sv-led green"></div><div class="sv-bars"><span></span><span></span><span></span></div></div>
+              <div class="sv-server-unit"><div class="sv-led orange"></div><div class="sv-bars"><span></span><span></span><span></span></div></div>
+              <div class="sv-db-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="sv-signal"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+          <div class="skill-body">
+            <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Backend Dev</h3>
+            <p>Robust server-side logic, REST APIs, and database design that power your applications.</p>
+            <div class="skill-tags"><span>Node.js</span><span>PHP</span><span>MySQL</span></div>
+          </div>
+        </div>
+
+        <!-- Responsive Design -->
+        <div class="skill-card" id="skill-mobile">
+          <div class="skill-visual skill-visual--mobile">
+            <div class="sv-devices">
+              <div class="sv-desktop">
+                <div class="sv-dscreen"><div class="sv-drow"></div><div class="sv-drow short"></div><div class="sv-drow"></div></div>
+                <div class="sv-dstand"></div>
+              </div>
+              <div class="sv-tablet">
+                <div class="sv-tscreen"><div class="sv-drow"></div><div class="sv-drow short"></div></div>
+              </div>
+              <div class="sv-phone">
+                <div class="sv-pscreen"><div class="sv-drow"></div><div class="sv-drow short"></div></div>
+                <div class="sv-phome"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-body">
+            <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Responsive Design</h3>
+            <p>Every site I build looks flawless on every screen — mobile, tablet, and desktop.</p>
+            <div class="skill-tags"><span>Mobile-first</span><span>CSS Grid</span><span>Flexbox</span></div>
+          </div>
+        </div>
+
+        <!-- SEO & Performance -->
+        <div class="skill-card" id="skill-seo">
+          <div class="skill-visual skill-visual--seo">
+            <div class="sv-seo-wrap">
+              <div class="sv-gauge">
+                <div class="sv-gauge-arc"></div>
+                <div class="sv-gauge-needle"></div>
+                <div class="sv-gauge-score">98</div>
+                <div class="sv-gauge-label">Score</div>
+              </div>
+              <div class="sv-seo-bars">
+                <div class="sv-sbar" style="height:45%"><span>SEO</span></div>
+                <div class="sv-sbar" style="height:75%"><span>Perf</span></div>
+                <div class="sv-sbar" style="height:90%"><span>A11y</span></div>
+                <div class="sv-sbar" style="height:60%"><span>BP</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-body">
+            <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Performance &amp; SEO</h3>
+            <p>Optimized load times and search rankings that drive real traffic and conversions.</p>
+            <div class="skill-tags"><span>Lighthouse</span><span>SEO</span><span>Core Web Vitals</span></div>
+          </div>
+        </div>
+
+        <!-- Brand Identity -->
+        <div class="skill-card" id="skill-brand">
+          <div class="skill-visual skill-visual--brand">
+            <div class="sv-brand-wrap">
+              <div class="sv-logo-mark"><span>O</span></div>
+              <div class="sv-palette">
+                <div class="sv-swatch" style="background:#ff6b00"></div>
+                <div class="sv-swatch" style="background:#1a1a1a"></div>
+                <div class="sv-swatch" style="background:#888"></div>
+                <div class="sv-swatch" style="background:#ffffff"></div>
+              </div>
+              <div class="sv-type-sample">
+                <div class="sv-type-h">Aa</div>
+                <div class="sv-type-body">Inter · Space Grotesk</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-body">
+            <div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Brand Identity</h3>
+            <p>Helping businesses stand out with cohesive visual identities that resonate.</p>
+            <div class="skill-tags"><span>Logos</span><span>Color Systems</span><span>Typography</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FEATURED PROJECT ======= -->
+  <section class="featured-projects section-pad light-section" id="featured">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Portfolio</span>
+        <h2>Featured <span class="accent">Project</span></h2>
+        <p>A showcase of my latest real-world work</p>
+      </div>
+      <div class="projects-grid fade-up" style="max-width: 420px; margin: 0 auto;">
+        <div class="project-card" id="proj-card-3">
+          <div class="project-img" style="background: linear-gradient(135deg, #333, #ff6b00);">
+            <div class="project-img-icon"><i class="fa-solid fa-music"></i></div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Entertainment</span>
+            <h3>GrooveLink</h3>
+            <p>A premium musician booking &amp; music lesson scheduling platform with elegant UI/UX.</p>
+            <div class="project-tech"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span></div>
+            <div class="project-links">
+              <a href="groovelink-mock.html" class="btn-link">View Prototype <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center-btn fade-up">
+        <a href="projects.html" class="btn btn-outline" id="all-projects-btn">See All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= HONEST PHILOSOPHY (REPLACED TESTIMONIALS) ======= -->
+  <section class="testimonials section-pad" id="philosophy">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Philosophy</span>
+        <h2>Honest <span class="accent">Vantage</span></h2>
+        <p>I'm currently prioritizing high-impact work over a long list of generic reviews. Here’s how I operate.</p>
+      </div>
+      <div class="testimonials-grid fade-up">
+        <div class="testimonial-card" id="phil-1">
+          <div class="quote-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Focus on Results</h3>
+          <p>I don't believe in vanity metrics. I believe in building digital products that solve real problems, drive measurable growth, and actually work for your business.</p>
+        </div>
+        <div class="testimonial-card" id="phil-2">
+          <div class="quote-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>Direct Partnership</h3>
+          <p>When you work with Ope Labs, you work directly with me. No layers, no agency fluff just pure engineering and focused design conversations from start to finish.</p>
+        </div>
+        <div class="testimonial-card" id="phil-3">
+          <div class="quote-icon"><i class="fa-solid fa-plus"></i></div>
+          <h3>Seeking New Labs</h3>
+          <p>I am currently looking for 2 more ambitious partners to build the next set of flagship digital experiments. If that's you, let's start a conversation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA SECTION ======= -->
+  <section class="cta-section fade-up">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to build something <span class="accent">amazing</span>?</h2>
+        <p>Let's collaborate to create a website that represents your brand perfectly and drives real results.</p>
+        <a href="contact.html#contact-form" class="btn btn-primary" id="cta-hire-btn">Let's Work Together</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="brand-icon">
+              <div class="flask-body">
+                <div class="flask-waves"></div>
+              </div>
+              <div class="flask-dot"></div>
+            </div>
+            Ope<span>Labs</span>
+          </a>
+          <p>Web Developer & Designer crafting digital experiences that matter.</p>
+          <div class="social-links">
+            <a href="https://github.com/mrOpe1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/_opemipo__" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Brand Identity</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <p><i class="fa-solid fa-envelope"></i> sotinwaope5@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +234 908 528 7177</p>
+          <p><i class="fa-solid fa-location-dot"></i> Abuja, Nigeria</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ope Labs. All rights reserved. Crafted with <span class="accent">♥</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

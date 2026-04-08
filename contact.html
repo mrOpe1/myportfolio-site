@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Ope Labs – Web Developer & Designer. Get in touch to start your laboratory experiment today." />
+  <title>Contact Us | Ope Labs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="brand-icon">
+          <div class="flask-body">
+            <div class="flask-waves"></div>
+          </div>
+          <div class="flask-dot"></div>
+        </div>
+        Ope<span>Labs</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <button class="nav-close-btn" id="nav-close-btn" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <div class="nav-backdrop" id="nav-backdrop"></div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+      <a href="contact.html" class="btn btn-primary hire-btn">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero hero-bg-contact">
+    <div class="container page-hero-content">
+      <span class="section-tag fade-up">Contact Me</span>
+      <h1 class="fade-up">Let's <span class="accent">Collaborate</span></h1>
+      <p class="fade-up">Ready to start your next lab experiment together?</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section section-pad" id="contact-main">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- INFO PANEL -->
+        <div class="contact-info fade-up">
+          <h2>Let's start a <span class="accent">conversation</span></h2>
+          <p>Whether you need a brand-new website, a redesign, or a complex web application — I'm here to help. Fill in the form or reach out through any of these channels.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item" id="c-email">
+              <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>sotinwaope5@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-detail-item" id="c-phone">
+              <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <span>+234 908 528 7177</span>
+              </div>
+            </div>
+            <div class="contact-detail-item" id="c-location">
+              <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Location</strong>
+                <span>Abuja, Nigeria (Remote Worldwide)</span>
+              </div>
+            </div>
+            <div class="contact-detail-item" id="c-availability">
+              <div class="detail-icon avail-icon"><i class="fa-solid fa-circle"></i></div>
+              <div>
+                <strong>Availability</strong>
+                <span>Open to new projects</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://x.com/_opemipo__" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com/mrOpe1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form-wrap fade-up">
+          <!-- FORM-LEVEL MESSAGES -->
+          <div data-fs-error style="color: var(--primary); margin-bottom: 1rem; font-size: 0.9rem;"></div>
+
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/mwvwravq" method="POST">
+            <!-- Formspree Config -->
+            <input type="hidden" name="_subject" value="New Experiment Request from Ope Labs Portfolio" />
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" data-fs-field required />
+                <span data-fs-error="name" style="color: var(--primary); font-size: 0.8rem;"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" data-fs-field required />
+                <span data-fs-error="email" style="color: var(--primary); font-size: 0.8rem;"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" data-fs-field />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed *</label>
+              <select id="service" name="Project Service" data-fs-field required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="Web Design">Web Design</option>
+                <option value="Web Development">Web Development</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="E-Commerce Store">E-Commerce Store</option>
+                <option value="Brand Identity">Brand Identity</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range (USD)</label>
+              <select id="budget" name="Project Budget" data-fs-field>
+                <option value="" disabled selected>Select a budget range...</option>
+                <option value="Baseline Foundation ($400 - $1.5k)">Baseline Foundation ($400 – $1,500)</option>
+                <option value="Professional Scalability ($1.5k - $4k)">Professional Scalability ($1,500 – $4,000)</option>
+                <option value="Bespoke Engineering ($4k - $8k)">Bespoke Engineering ($4,000 – $8,000)</option>
+                <option value="Enterprise Partnership ($8k+)">Enterprise Partnership ($8,000+)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." rows="5" data-fs-field required></textarea>
+              <span data-fs-error="message" style="color: var(--primary); font-size: 0.8rem;"></span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit" data-fs-submit-btn>
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+          
+          <!-- SUCCESS MODAL OVERLAY (Popped up after successful send) -->
+          <div class="success-modal-overlay" id="success-modal" style="display: none;">
+            <div class="success-modal-content">
+              <div class="success-icon-wrap">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <h3>Message Sent!</h3>
+              <p>Your experiment request was delivered successfully. I'll get back to you within 24 hours.</p>
+              <button class="btn btn-primary" onclick="closeSuccessModal()">Great, thanks!</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="contact-section section-pad" id="contact">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">FAQ</span>
+        <h2>Common <span class="accent">Questions</span></h2>
+      </div>
+      <div class="faq-grid fade-up">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" aria-expanded="false">
+            How long does a typical project take?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Project timelines depend on scope and complexity. A simple landing page can be ready in 3–5 days, while a full web application may take 4–8 weeks. I always provide a clear timeline upfront.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" aria-expanded="false">
+            How does payment work?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I typically require a 50% deposit to start, with the remaining 50% due on project completion. For larger projects, I can structure milestone-based payments.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" aria-expanded="false">
+            Do you work with clients outside Nigeria?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely! I work with clients worldwide. I'm comfortable with remote collaboration and can adapt to different time zones for meetings and check-ins.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" aria-expanded="false">
+            Will my website be mobile-friendly?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Every website I build is fully responsive and mobile-first. It will look and work flawlessly on all screen sizes — phones, tablets, and desktops.</p>
+          </div>
+        </div>
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" aria-expanded="false">
+            Do you provide post-launch support?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! All projects include 30 days of free post-launch support. Beyond that, I offer maintenance packages to keep your site updated and secure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="brand-icon">
+              <div class="flask-body">
+                <div class="flask-waves"></div>
+              </div>
+              <div class="flask-dot"></div>
+            </div>
+            Ope<span>Labs</span>
+          </a>
+          <p>Web Developer & Designer crafting digital experiences that matter.</p>
+          <div class="social-links">
+            <a href="https://github.com/mrOpe1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/_opemipo__" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Brand Identity</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <p><i class="fa-solid fa-envelope"></i> sotinwaope5@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +234 908 528 7177</p>
+          <p><i class="fa-solid fa-location-dot"></i> Abuja, Nigeria</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ope Labs. All rights reserved. Crafted with <span class="accent">♥</span></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

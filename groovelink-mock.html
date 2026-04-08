@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GrooveLink - Premium Musician Booking Platform. Coming Soon to Ope Labs." />
+  <title>GrooveLink | Coming Soon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --gl-amber: #ff6b00;
+      --gl-teal: #008080;
+      --gl-purple: #6a0dad;
+      --gl-bg: #0c0f1a;
+    }
+    .mock-hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10rem 5% 5rem;
+      background: radial-gradient(circle at top right, rgba(255, 107, 0, 0.1), transparent 40%),
+                  radial-gradient(circle at bottom left, rgba(106, 13, 173, 0.1), transparent 40%);
+    }
+    .mockup-display {
+      max-width: 900px;
+      width: 100%;
+      margin: 3rem auto;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 20px rgba(255, 107, 0, 0.2);
+      border: 1px solid rgba(255,255,255,0.1);
+      transform: perspective(1000px) rotateX(5deg);
+      transition: transform 0.5s ease;
+    }
+    .mockup-display:hover {
+      transform: perspective(1000px) rotateX(0deg);
+    }
+    .gl-image {
+      width: 100%;
+      display: block;
+    }
+    .coming-soon-ribbon {
+      background: linear-gradient(90deg, var(--gl-amber), var(--gl-purple));
+      color: white;
+      padding: 0.5rem 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,107,0,0.4); }
+      70% { box-shadow: 0 0 0 15px rgba(255,107,0,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,107,0,0); }
+    }
+    .gl-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 4rem auto 0;
+      text-align: left;
+    }
+    .gl-feature-card {
+      background: var(--bg-card);
+      padding: 2rem;
+      border-radius: 15px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+    .gl-feature-card:hover { transform: translateY(-5px); border-color: var(--gl-amber); }
+    .gl-feature-card i {
+      font-size: 1.5rem;
+      color: var(--gl-amber);
+      margin-bottom: 1rem;
+    }
+    .gl-feature-card h3 { color: var(--text-main); margin-bottom: 0.5rem; }
+    .gl-feature-card p { font-size: 0.9rem; color: var(--text-sec); }
+
+    [data-theme="light"] .gl-feature-card h3 { color: #000000 !important; }
+
+    /* GROOVELINK MOBILE OVERRIDES */
+    @media (max-width: 768px) {
+      .mock-hero { padding: 6rem 1.5rem 3rem; }
+      .hero-name { font-size: 2.5rem; }
+      .mockup-display { 
+        transform: none; 
+        margin: 2rem 0; 
+        border-radius: 12px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+      }
+      .gl-features { 
+        grid-template-columns: 1fr; 
+        gap: 1.5rem; 
+        margin-top: 2rem;
+        padding: 0 0.5rem;
+      }
+      .gl-feature-card { padding: 1.5rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="brand-icon">
+          <div class="flask-body">
+            <div class="flask-waves"></div>
+          </div>
+          <div class="flask-dot"></div>
+        </div>
+        Ope<span>Labs</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <button class="nav-close-btn" id="nav-close-btn" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-backdrop" id="nav-backdrop"></div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+      <a href="contact.html#contact-form" class="btn btn-primary hire-btn">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="mock-hero">
+    <div class="container fade-in">
+      <div class="coming-soon-ribbon">Currently In The Lab</div>
+      <h1 class="hero-name">Groove<span style="color: var(--gl-amber)">Link</span></h1>
+      <p style="max-width: 700px; margin: 1.5rem auto;">The definitive platform for connecting elite musicians with students and event organizers. We're currently fine-tuning the experience.</p>
+      
+      <div class="mockup-display fade-up">
+        <img src="groovelink_mockup.png" alt="GrooveLink Dashboard Mockup" class="gl-image" />
+      </div>
+
+      <div class="gl-features">
+        <div class="gl-feature-card fade-up">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>Smart Scheduling</h3>
+          <p>Automated booking engine tailored for music lessons and studio sessions.</p>
+        </div>
+        <div class="gl-feature-card fade-up">
+          <i class="fa-solid fa-users"></i>
+          <h3>Artist Directory</h3>
+          <p>Discover hand-picked talent with verified reviews and professional portfolios.</p>
+        </div>
+        <div class="gl-feature-card fade-up">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Secure Payments</h3>
+          <p>Seamless transaction management for bookings and recurring subscriptions.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 5rem;">
+        <a href="projects.html" class="btn btn-outline" style="border-color: var(--gl-amber); color: var(--gl-amber);">
+          <i class="fa-solid fa-arrow-left"></i> Back to Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="text-align: center; padding: 2rem 0;">&copy; 2026 Ope Labs. GrooveLink is a trademark of Ope Labs Experimental Division.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

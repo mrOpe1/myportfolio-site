@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ope Labs Projects – A showcase of web development and design innovation." />
+  <title>Our Projects | Ope Labs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="brand-icon">
+          <div class="flask-body">
+            <div class="flask-waves"></div>
+          </div>
+          <div class="flask-dot"></div>
+        </div>
+        Ope<span>Labs</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <button class="nav-close-btn" id="nav-close-btn" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-backdrop" id="nav-backdrop"></div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+      <a href="contact.html#contact-form" class="btn btn-primary hire-btn">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero hero-bg-projects">
+    <div class="container page-hero-content">
+      <span class="section-tag fade-up">My Portfolio</span>
+      <h1 class="fade-up">Showcasing <span class="accent">Innovation</span></h1>
+      <p class="fade-up">Experimental projects and real-world solutions.</p>
+    </div>
+  </section>
+
+  <!-- FILTER TABS -->
+  <section class="section-pad" id="projects-list">
+    <div class="container">
+      <div class="filter-tabs fade-up" id="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Experiments</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="design">Branding</button>
+      </div>
+
+      <section class="projects-full-grid projects-full-section" id="projects-grid">
+
+        <div class="project-full-card" data-category="web" id="pf-1">
+          <div class="pf-image" style="background: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;">
+            <div class="pf-icon"><i class="fa-solid fa-music"></i></div>
+            <div class="pf-overlay">
+              <span class="pf-tag">Web App</span>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>GrooveLink Platform</h3>
+            <p>A premium musician booking and music lesson scheduling platform. Features a complex interactive scheduling engine and discovery directory for local artists.</p>
+            <div class="pf-tech"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Tailwind</span></div>
+            <div class="pf-actions">
+              <a href="groovelink-mock.html" class="btn-link">View Prototype <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-full-card" data-category="ecommerce" id="pf-2">
+          <div class="pf-image" style="background: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;">
+            <div class="pf-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="pf-overlay">
+              <span class="pf-tag">E-Commerce</span>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>EcoBloom Boutique</h3>
+            <p>A clean, minimalist e-commerce experience for a sustainable fashion brand. Optimized for fast loading and high conversion with a focus on product storytelling.</p>
+            <div class="pf-tech"><span>React</span><span>Node.js</span><span>Stripe</span><span>MongoDB</span></div>
+            <div class="pf-actions">
+              <span class="coming-soon-badge"><i class="fa-solid fa-flask-vial"></i> In the Lab</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-full-card" data-category="web" id="pf-3">
+          <div class="pf-image" style="background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;">
+            <div class="pf-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="pf-overlay">
+              <span class="pf-tag">Corporate</span>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>Abuja Global Logistics</h3>
+            <p>A multi-page corporate website for a high-traffic logistics firm. Features real-time tracking integration and a professional, trustworthy visual identity.</p>
+            <div class="pf-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SEO</span></div>
+            <div class="pf-actions">
+              <span class="coming-soon-badge"><i class="fa-solid fa-flask-vial"></i> Coming Soon</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-full-card" data-category="design" id="pf-4">
+          <div class="pf-image" style="background: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;">
+            <div class="pf-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="pf-overlay">
+              <span class="pf-tag" style="color: #64748b; background: rgba(255,255,255,0.9);">Branding</span>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>Ope Labs Branding</h3>
+            <p>The complete digital identity system for Ope Labs. Includes custom iconography, typography scales, and the interactive portfolio experience you are currently viewing.</p>
+            <div class="pf-tech"><span>Figma</span><span>CSS Grid</span><span>Animations</span></div>
+            <div class="pf-actions">
+              <span class="coming-soon-badge"><i class="fa-solid fa-flask-vial"></i> In the Lab</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section fade-up">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Have a project in <span class="accent">mind?</span></h2>
+        <p>Let's discuss your idea and turn it into something extraordinary.</p>
+        <a href="contact.html#contact-form" class="btn btn-primary" id="projects-cta-btn">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="brand-icon">
+              <div class="flask-body">
+                <div class="flask-waves"></div>
+              </div>
+              <div class="flask-dot"></div>
+            </div>
+            Ope<span>Labs</span>
+          </a>
+          <p>Web Developer & Designer crafting digital experiences that matter.</p>
+          <div class="social-links">
+            <a href="https://github.com/mrOpe1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/_opemipo__" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Brand Identity</a></li>
+            <li><a href="#">SEO Optimization</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get In Touch</h4>
+          <p><i class="fa-solid fa-envelope"></i> sotinwaope5@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +234 908 528 7177</p>
+          <p><i class="fa-solid fa-location-dot"></i> Abuja, Nigeria</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ope Labs. All rights reserved. Crafted with <span class="accent">♥</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
